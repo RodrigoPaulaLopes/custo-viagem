@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="12sp"
+    android:background="#eee"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:textSize="16sp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="Custo viagem app"
+        android:layout_marginBottom="16dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:text="Total de quilometros" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Distance"
+        android:textColor="#222"
+        android:textColorHint="#333"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:text="Preço por litro" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Preço"
+        android:textColor="#222"
+        android:textColorHint="#333"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="#000"
+        android:text="Kms por litro" />
+    <EditText
+        android:layout_width="match_parent"
+        android:hint="Autonomia"
+        android:textColor="#222"
+        android:textColorHint="#333"
+        android:layout_height="wrap_content"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:layout_marginTop="16dp"
+        android:text="SEU GASTO TOTAL SERA DE"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginTop="16dp"
+        android:text="R$0"
+        android:gravity="center" />
+
+    <Button  android:text="CALCULATE" android:layout_height="64dp" android:layout_width="match_parent" android:layout_marginTop="32dp"/>
+/>
+</LinearLayout>
