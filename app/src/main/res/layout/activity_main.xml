@@ -14,69 +14,86 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="64dp"
-        android:textSize="16sp"
+        android:layout_marginBottom="16dp"
         android:background="@color/black"
         android:gravity="center"
-        android:textColor="#fff"
         android:text="Custo viagem app"
-        android:layout_marginBottom="16dp"/>
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
+        android:text="Total de quilometros"
         android:textColor="#000"
-        android:text="Total de quilometros" />
+        android:textSize="32sp" />
+
     <EditText
+        android:id="@+id/edit_distance"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Distance"
+        android:inputType="number"
         android:textColor="#222"
         android:textColorHint="#333"
-        android:layout_height="wrap_content"
         android:textSize="30sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
+        android:text="Preço por litro"
         android:textColor="#000"
-        android:text="Preço por litro" />
+        android:textSize="32sp" />
+
     <EditText
+        android:id="@+id/edit_preco"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Preço"
+        android:inputType="numberDecimal"
         android:textColor="#222"
         android:textColorHint="#333"
-        android:layout_height="wrap_content"
         android:textSize="30sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
+        android:text="Kms por litro"
         android:textColor="#000"
-        android:text="Kms por litro" />
+        android:textSize="32sp" />
+
     <EditText
+        android:id="@+id/edit_autonomia"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:hint="Autonomia"
+        android:inputType="numberDecimal"
         android:textColor="#222"
         android:textColorHint="#333"
-        android:layout_height="wrap_content"
         android:textSize="30sp" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="32sp"
         android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="SEU GASTO TOTAL SERA DE"
-        android:gravity="center" />
+        android:textSize="32sp" />
+
     <TextView
+        android:id="@+id/text_total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
         android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="R$0"
-        android:gravity="center" />
+        android:textSize="30sp" />
 
-    <Button  android:text="CALCULATE" android:layout_height="64dp" android:layout_width="match_parent" android:layout_marginTop="32dp"/>
-/>
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:text="CALCULATE" />
+    />
 </LinearLayout>
